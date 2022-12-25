@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    font-family: 'Pacifico', cursive;
+    margin:0;
+    padding:0;
+    background-color: #00002C;
+}
+.disflex
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00002C;
+}
+.samecolor
+{
+    background-color: #00002C;
+}
+#appname
+{
+    color:#FF4500;
+    width:100%;
+    height:fit-content;
+    position:sticky;
+    top:0px;
+}
+
+.navbar
+{
+    list-style-type: none;
+    padding:5px;
+}
+.headt
+{
+    animation:tg 2s;
+    font-size:40px;
+}
+.aboutnavbar
+{
+    border:2px solid  #FF4500;
+    border-radius:30px;
+    padding:10px;
+}
+.aboutnavbar a
+{
+    text-decoration: none;
+    color:#ff0075;
+}
+#countnavbar 
+{
+    position:sticky;
+    top:60px;
+}
+#countnavbar div hr
+{
+    border:2px solid black;
+    margin-top:5px;
+}
+#countnavbar div p
+{
+    color:red;
+    font-size: 20px;
+    margin-top:10px;
+    text-align: center;
+}
+.taskcount
+{
+    color:#FF4500;
+}
+
+#task
+{
+    background-color: #00002C;
+    margin-bottom:150px;
+    width:100%;
+    height: fit-content;
+}
+.icon
+{
+    color:#FF4500;
+}
+
+form:focus,input:focus
+{
+    outline: none;
+    border-color: rgb(100, 153, 255);
+}
+#form
+{
+    background-color: #00002C;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:20%;
+}
+
+.formli
+{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    background: rgb(31, 32, 35);
+    border: 1px solid rgb(60, 63, 68);
+    color: rgb(247, 248, 248);
+    margin-top:20px;
+    list-style-type: none;
+    border-radius:5px;
+    width:90vw;
+}
+.inputEl
+{
+    background: rgb(31, 32, 35);
+    margin-left:2.5px;
+    border:none;
+    padding:10px;
+    width:100%;
+    height:30px;
+}
+.formli i
+{ 
+    background: rgb(31, 32, 35);
+    margin:5px 10px;
+}
+.formli i:hover
+{
+    cursor: pointer;
+}
+
+/* js STyle */
+.listStyle 
+{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin:30px 20px;
+    border:2px solid  #00001D;
+    border-radius:10px;
+    justify-content: space-between;
+    padding:15px;
+    font-size:1.2em;
+}
+.listStyle  span
+{
+    color:#FF4500;
+}
+.listStyle  p
+{
+    font-size: 23px;
+    text-transform: capitalize;
+}
+.listStyle  input
+{
+    border:2px solid #FF4500;
+    padding:8px;
+    border-radius: 30px;
+    color:#fff;
+}
+
+
+/* Animations */
+@keyframes remove
+{
+    from
+    {
+        transform:translateX(20px);
+    }
+    to
+    {
+        transform:translate(120%);
+    }
+}
+@keyframes complete
+{
+    from
+    {
+        transform:translateX(-20px);
+    }
+    to
+    {
+        transform:translate(-120%);
+    }
+}
+.completeanimation
+{
+    animation-name:complete;
+    animation-duration: 1s;
+}
+.removeanimation
+{
+    animation-name:remove;
+    animation-duration: 1s;
+}
